@@ -1,0 +1,14 @@
+---
+title: 2023-2024 Season
+layout: base.njk
+---
+{% if comingattractions %}
+    <h1>{{title}}</h1>
+    {% for show in comingattractions %}
+    <section>
+        <h2>{{show.title}}</h2>
+        {% if show.image %}<img class="poster" src={{show.image}} title="{{show.alt}}" alt="{{show.alt }}" >{% endif%}
+        {{ show.description | safe }}
+    </section>
+    {% endfor %}
+{% endif %}
