@@ -6,7 +6,7 @@ layout: base.njk
     <h1>{{title}}</h1>
     {% for show in comingattractions %}
         <h2>{{show.title}}{% if show.dates %} <span class="small">{{show.dates}}</span>{% endif %}</h2>
-        {% if show.image %}<img class="poster" src={{show.image}} title="{{show.alt}}" alt="{{show.alt }}" >{% endif%}
+        {% if show.image %}<a target="_blank" href="https://dreherathletics.com/event-tickets"><img class="poster" src={{show.image}} title="{{show.alt}}" alt="{{show.alt }}" ></a>{% endif%}
         {{ show.description | safe }}
     {% endfor %}
 {% endif %}
