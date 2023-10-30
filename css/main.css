@@ -112,14 +112,10 @@ article h2 + p {
     margin-top: 0;
 }
 article .poster {
-    max-width: 100%;
-    width: 120px;
+    width: 100%;
     margin: .5em 1em .5em 0;
-    clear: both;
     text-align: center;
-    border: 1px solid var(--glow);
-    filter: drop-shadow(0 0 4px var(--glow));
-    float: left;
+    border-radius: 5px;
 }
 article {
     background-image: var(--backdrop);
