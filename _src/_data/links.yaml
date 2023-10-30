@@ -2,8 +2,7 @@
   url: https://dreherathletics.com/event-tickets
   external: true
 - label: Calendar
-  url: https://calendar.google.com/calendar/u/0?cid=YTY0ZTQ2MTI2NTE4ODBlZWI4YWY2ZWUwMTQ0ZWRlYWE1Njc4MTFmYjZjMzYzNmFmOWMxMjA5NDllYmQyOGE5MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t
-  external: true
+  url: /#Calendar
 - label: Donate
   url: https://forms.gle/1JQRysxxaeBFJbTw8
   external: true

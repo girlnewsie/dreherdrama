@@ -5,10 +5,11 @@ layout: base.njk
 {% if comingattractions %}
     <h1>{{title}}</h1>
     {% for show in comingattractions %}
-    <section>
-        <h2>{{show.title}}</h2>
+        <h2>{{show.title}}{% if show.dates %} <span class="small">{{show.dates}}</span>{% endif %}</h2>
         {% if show.image %}<img class="poster" src={{show.image}} title="{{show.alt}}" alt="{{show.alt }}" >{% endif%}
         {{ show.description | safe }}
-    </section>
     {% endfor %}
 {% endif %}
+
+<h1 id="Calendar">Calendar of Events</h1>
+<iframe style="width:100%" src="https://calendar.google.com/calendar/embed?src=a64e4612651880eeb8af6ee0144edeaa567811fb6c3636af9c120949ebd28a90%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>

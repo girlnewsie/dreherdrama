@@ -155,3 +155,7 @@ article nav a:hover {
     color: var(--dreher-blue);
     filter: drop-shadow(0 0 5px var(--glow));
 }
+.small {
+    font-size: 75%;
+    color: white;
+}
