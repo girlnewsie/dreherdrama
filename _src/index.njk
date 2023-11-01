@@ -7,6 +7,7 @@ layout: base.njk
     {% for show in comingattractions %}
         <h2>{{show.title}}{% if show.dates %} <span class="small">{{show.dates}}</span>{% endif %}</h2>
         {% if show.image %}<a target="_blank" href="https://richlandone.hometownticketing.com/embed/all?tile_id=14&tile_item=67"><img class="poster" src={{show.image}} title="{{show.alt}}" alt="{{show.alt }}" ></a>{% endif%}
+        {% if show.shirt %}<p><a class="link" href={{show.shirt}}>Buy a shirt!</a></p>{% endif %}
         {{ show.description | safe }}
     {% endfor %}
 {% endif %}
